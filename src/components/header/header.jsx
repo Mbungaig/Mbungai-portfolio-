@@ -14,9 +14,9 @@ const header = () => {
           </div>
         </div>
         <div className="left">
-          <h5> HELLO I am</h5>
+          <h3> HELLO I am</h3>
           <h1> MBUNGAI GEORGE BERI.</h1>
-          <h5 className="text-light">a junior Embedded system Engineer</h5>
+          <h3 className="text-light">a junior Embedded system Engineer</h3>
           <CTA />
           <HeaderSocials />
         </div>

@@ -11,7 +11,7 @@
     text-decoration: none;
 }
  
-:root {
+/* :root {
     --color-bg: #ffffff;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
@@ -22,12 +22,12 @@
     --container-width-md: 86%;
     --container-width-sm: 90%;
     --transition: all 400ms ease;
-} 
+}  */
 
- /* :root {
-    --color-primary: hsl(66, 85%, 37%);
-    --color-bg: hsl(64, 88%, 10%);
-    --color-bg-variant: hsl(65, 87%, 21%);
+   :root {
+    --color-primary:hsl(153, 21%, 60%);
+    --color-bg:hsl(40, 5%, 11%);
+    --color-bg-variant: hsl(0, 0%, 24%);
     --color-primary-variant: hsl(66, 85%, 45%);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
@@ -35,7 +35,7 @@
     --container-width-md: 86%;
     --container-width-sm: 90%;
     --transition: all 400ms ease;
-}  */
+    --swiper-theme-color: var(--color-primary) !important;} 
 
 html {
     scroll-behavior: smooth;
@@ -72,7 +72,6 @@ h1 {
 
 section {
     margin-top: 8rem;
-    height: 100vh;
 }
 
 section>h2,
