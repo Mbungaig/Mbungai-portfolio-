@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { reviewModel } = require("../models/reviewModels");
+const { reviewModel } = require("../models/revMod");
 
 router.post("/new-review", (req, res, next) => {
   const dt = {

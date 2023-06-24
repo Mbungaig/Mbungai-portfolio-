@@ -4,8 +4,14 @@
   "description": "backend for my react portofolio",
   "main": "mbg_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mbg_server.js",
+    "backend": "nodemon mbg_server.js"
   },
   "author": "mbungai",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "nodemon": "^2.0.22"
+  }
 }
