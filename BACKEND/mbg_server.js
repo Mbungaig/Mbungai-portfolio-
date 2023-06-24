@@ -1,6 +1,6 @@
 require("dotenv").config();
 const port = parseInt(process.env.PORT) || 8080;
-
+const API = require("./routes/revRte")
 const express = require("express");
 const app = express();
 const { connect } = require("mongoose");
@@ -17,10 +17,10 @@ app.use(
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/hello", (req, res) => {
+app.post("/hello", (req, res) => {
   res.end("Welcome to my website");
 });
-
+app.use('/api', API);
 // Connect to the database then listen for requests on PORT
 connect(process.env.MONGODB_URI)
   .then(() =>
